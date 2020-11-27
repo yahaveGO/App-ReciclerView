@@ -3,14 +3,27 @@ package com.example.appreciclerview;
 public class Restaurante {
     private String nombre;
     private String urlFoto;
+    private String pais;
     private float valoracion;
-    private String direccion;
+    private String url;
 
-    public Restaurante(String nombre, String urlFoto, float valoracion, String direccion) {
+    public Restaurante(String s0, String s, String s1, float v) {
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Restaurante(String nombre, String urlFoto, String pais, float valoracion, String url) {
         this.nombre = nombre;
         this.urlFoto = urlFoto;
+        this.pais = pais;
         this.valoracion = valoracion;
-        this.direccion = direccion;
+        this.url = url;
     }
 
     public String getNombre() {
@@ -29,19 +42,19 @@ public class Restaurante {
         this.urlFoto = urlFoto;
     }
 
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
     public float getValoracion() {
         return valoracion;
     }
 
     public void setValoracion(float valoracion) {
         this.valoracion = valoracion;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
     }
 }
